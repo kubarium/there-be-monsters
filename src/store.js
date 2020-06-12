@@ -5,7 +5,7 @@ import CR from "@/data/cr.json";
 
 const Environments = ["Arctic", "Coastal", "Desert", "Forest", "Grassland", "Hill", "Mountain", "Swamp", "Underdark", "Underwater", "Urban"];
 const Languages = ["Auran", "Aarakocra", "Abyssal", "Aquan", "Blink Dog", "Bothii", "Bullywug", "Celestial", "Common", "Deep Speech", "Draconic", "Druidic", "Dwarvish", "Elvish", "Giant", "Giant Eagle", "Giant Elk", "Giant Owl", "Gith", "Gnoll", "Gnomish", "Goblin", "Grell", "Halfling", "Hook Horror", "Ice Toad", "Ignan", "Infernal", "Ixitxachitl", "Modron", "Netherese", "Orc", "Otyugh", "Primordial", "Sahuagin", "Slaad", "Sphinx", "Sylvan", "Telepathy", "Terran", "Thayan", "Thri-kreen", "Troglodyte", "Umber Hulk", "Undercommon", "Winter Wolf", "Worg", "Yeti", "Yikaria"];
-const Environments = ["Aberration", "Beast", "Celestial", "Construct", "Dragon", "Elemental", "Fey", "Fiend", "Giant", "Humanoid", "Monstrosity", "Ooze", "Plant", "Swarm Of Tiny Beasts", "Undead"];
+const Types = ["Aberration", "Beast", "Celestial", "Construct", "Dragon", "Elemental", "Fey", "Fiend", "Giant", "Humanoid", "Monstrosity", "Ooze", "Plant", "Swarm Of Tiny Beasts", "Undead"];
 const sizes = {
   "T": "Tiny",
   "S": "Small",
