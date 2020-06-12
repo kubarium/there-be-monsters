@@ -1,18 +1,25 @@
 <template>
-  <v-container>
+  <v-container fluid>
     <v-row class="text-center">
       <v-col cols="12">
         <v-card>
-          <v-tabs dark background-color="teal darken-3" v-if="$store.state.encounters.length" v-model="tab" show-arrows>
-            <v-tabs-slider color="teal lighten-3"></v-tabs-slider>
+          <v-tabs
+            dark
+            background-color="orange darken-3"
+            v-if="$store.state.encounters.length"
+            v-model="tab"
+            show-arrows
+          >
+            <v-tabs-slider color="red darken-3"></v-tabs-slider>
 
-            <v-tab v-for="(encounter, index) in $store.state.encounters" :key="`encounter-${index}`">
+            <v-tab v-for="(encounter, index) in $store.state.encounters" :key="`encounter-${index}`" class="encounter">
               <v-text-field
                 :value="encounter.title"
                 prepend-icon="fa-window-close"
                 append-outer-icon="far fa-dot-circle"
                 @input="$store.dispatch('updateEncounterTitle', { index, value: $event })"
                 @click:prepend="$store.dispatch('deleteEncounter', index)"
+                class="encounter-title"
               />
             </v-tab>
             <v-tab-item v-for="(encounter, index) in $store.state.encounters" :key="index">
@@ -21,7 +28,7 @@
                   <p v-if="!encounter.monsters.length" class="pa-10">
                     Now add any monster to this encounter.
                   </p>
-                  <v-tabs v-else vertical color="green lighten-3" background-color="teal lighten-1" show-arrows>
+                  <v-tabs v-else vertical color="orange darken-3" background-color="yellow lighten-3" show-arrows>
                     <v-tab
                       v-for="(monster, mindex) in encounter.monsters"
                       :key="`monster-${mindex}`"
@@ -64,9 +71,18 @@
         },
         get() {
           return this.$store.state.currentEncounter;
-        }
-      }
+        },
+      },
     },
-    methods: {}
+    methods: {},
   };
 </script>
+
+<style>
+  .encounter-title {
+    max-width: 180px;
+  }
+  .encounter {
+    border-right: 2px dashed #c62828;
+  }
+</style>
