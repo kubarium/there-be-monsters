@@ -1,21 +1,5 @@
-# there-be-monsters
+# There Be Monsters
 
-## Project setup
-```
-yarn install
-```
+D&D 5E Monster Stats in a digital format.
 
-### Compiles and hot-reloads for development
-```
-yarn run serve
-```
-
-### Compiles and minifies for production
-```
-yarn run build
-```
-
-### Lints and fixes files
-```
-yarn run lint
-```
+[![there-be-monsters.jpg](https://i.postimg.cc/434Y23Xj/there-be-monsters.jpg)](https://postimg.cc/LJ74n2YV)
